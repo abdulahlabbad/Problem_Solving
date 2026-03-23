@@ -1,31 +1,39 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34221.43
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Print Data", "Print Data\Print Data.vcxproj", "{7666B79D-25AA-4B04-A918-15BCD493E86D}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7666B79D-25AA-4B04-A918-15BCD493E86D}.Debug|x64.ActiveCfg = Debug|x64
-		{7666B79D-25AA-4B04-A918-15BCD493E86D}.Debug|x64.Build.0 = Debug|x64
-		{7666B79D-25AA-4B04-A918-15BCD493E86D}.Debug|x86.ActiveCfg = Debug|Win32
-		{7666B79D-25AA-4B04-A918-15BCD493E86D}.Debug|x86.Build.0 = Debug|Win32
-		{7666B79D-25AA-4B04-A918-15BCD493E86D}.Release|x64.ActiveCfg = Release|x64
-		{7666B79D-25AA-4B04-A918-15BCD493E86D}.Release|x64.Build.0 = Release|x64
-		{7666B79D-25AA-4B04-A918-15BCD493E86D}.Release|x86.ActiveCfg = Release|Win32
-		{7666B79D-25AA-4B04-A918-15BCD493E86D}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B4B2CBA5-9FA2-4D0C-936E-D8CB1B048C54}
-	EndGlobalSection
-EndGlobal
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "*****************************" << endl;
+    string Name = "Abdulah Labbad.";
+    unsigned short Age = 20;
+    string City = "Syria";
+    string Country = "Damascus";
+    float ManthlySalary = 5000;
+    float YearlySalary = ManthlySalary * 12;
+    char Gender = 'M';
+    bool Married = true;
+
+    cout << "Name : " << Name << endl;
+    cout << "Age : " << Age << "years" << endl;
+    cout << "City : " << City << endl;
+    cout << "Country : " << Country << endl;
+    cout << "ManthlySalary : " << ManthlySalary << endl;
+    cout << "YearlySalary : " << YearlySalary << endl;
+    cout << "Gender : " << Gender << endl;
+    cout << "Married : " << Married << endl;
+    cout << "*****************************" << endl;
+
+    int num1 = 20;
+    int num2 = 30;
+    int num3 = 10;
+    int sum = num1 + num2 + num3;
+    cout << num1 << "+" << endl;
+    cout << num2 << "+" << endl;
+    cout << num3 << endl;
+    cout << "------------------" << endl;
+    cout << "Total = " << sum << endl;
+    cout << "*****************************" << endl;
+
+    unsigned short _Age = 25;
+    unsigned short AgeAfter5Year = _Age + 5;
+    cout << "After 5 years you will be " << AgeAfter5Year << " years old." << endl;
+}
