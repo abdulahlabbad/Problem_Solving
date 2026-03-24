@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+void ReadArrayData(float Grade[3])
+{
+	cout << "Please enter your Grade1 ?\n";
+	cin >> Grade[0];
+	cout << "Please enter your Grade2 ?\n";
+	cin >> Grade[1];
+	cout << "Please enter your Grade3 ?\n";
+	cin >> Grade[2];
+}
+
+float AvgArrayData(float Grade[3])
+{
+	float Avg = (Grade[0] + Grade[1] + Grade[2]) / 3;
+	return Avg;
+}
+
+int main()
+{
+	float Grade[3];
+	ReadArrayData(Grade);
+	cout << "***************\n";
+	cout << "The average of grades is : " << AvgArrayData(Grade) << endl;
+}
