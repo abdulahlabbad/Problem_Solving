@@ -1,0 +1,61 @@
+#include <iostream>
+using namespace std;
+
+struct strinfo
+{
+	string FirstName;
+	string LastName;
+	int Age;
+	string Phone;
+};
+
+void ReadArrayData(strinfo &strinfo1)
+{
+	cout << "Please enter your firstname ?\n";
+	cin >> strinfo1.FirstName;
+	cout << "Please enter your lastname ?\n";
+	cin >> strinfo1.LastName;
+	cout << "Please enter your age ?\n";
+	cin >> strinfo1.Age;
+	cout << "Please enter your phone ?\n";
+	cin >> strinfo1.Phone;
+}
+
+void PrintArrayData(strinfo strinfo1)
+{
+	cout << "**********************\n";
+	cout << "First Name: " << strinfo1.FirstName << "\n";
+	cout << "Last Name: " << strinfo1.LastName << "\n";
+	cout << "Age: " << strinfo1.Age << "\n";
+	cout << "Phone: " << strinfo1.Phone << "\n";
+	cout << "**********************\n\n";
+}
+
+void ReadPersonsData(strinfo Person[100] ,int &Length)
+{
+	cout << "How many person ?\n";
+	cin >> Length;
+	for (int i = 0; i <= Length - 1; i++)
+	{
+		cout << "Please enter perso' s " << i + 1 << endl;
+		ReadArrayData(Person[i]);
+	}
+}
+
+void PrintPersonsData(strinfo Person[100] , int Length)
+{
+	for (int i = 0; i <= Length - 1; i++)
+	{
+		cout << "Person' s " << i + 1 << "Info: " << endl;
+		PrintArrayData(Person[i]);
+	}
+}
+
+int main()
+{
+	strinfo Person[100];
+	int Length = 0;
+	ReadPersonsData(Person , Length);
+	PrintPersonsData(Person , Length);
+	
+}
